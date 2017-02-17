@@ -12,9 +12,9 @@ var updateParagraph = function () {
   var email = emailIn.value
   var phone = phoneIn.value
 
-  paragraph.innerHTML = '<h1>Hi, my name is : ' + firstName + '&nbsp' + lastName + '</h1><br><p>' + description + '<br>' +
+  paragraph.innerHTML = '<h1>Hi, my name is : ' + firstName + ' ' + lastName + '</h1><p>' + description + '</p><p>' +
   'If you\'re interested in a date, you can email me at:  <a href="email" target="_blank">' + email +
-  '</a><br> or give me a call at: <a href="phone" target="_blank">' + phone + '</a></p>'
+  '</a> or give me a call at: <a href="phone" target="_blank">' + phone + '</a></p>'
 }
 
 fNameIn.addEventListener('input', updateParagraph)
@@ -32,9 +32,9 @@ var updaterawParagraph = function () {
   var email = emailIn.value
   var phone = phoneIn.value
 
-  rawPara.textContent = '<h1>Hi, my name is : ' + firstName + '&nbsp' + lastName + '</h1><br><p>' + description + '<br>' +
+  rawPara.textContent = '<h1>Hi, my name is : ' + firstName + ' ' + lastName + '</h1><p>' + description + '</p><p>' +
   'If you\'re interested in a date, you can email me at:  <a href="email" target="_blank">' + email +
-  '</a><br> or give me a call at: <a href="phone" target="_blank">' + phone + '</a></p>'
+  '</a> or give me a call at: <a href="phone" target="_blank">' + phone + '</a></p>'
 }
 
 fNameIn.addEventListener('input', updaterawParagraph)
